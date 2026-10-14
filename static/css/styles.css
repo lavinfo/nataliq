@@ -1096,11 +1096,22 @@ p { text-wrap: pretty; }
 }
 .footer__col a:hover { color: var(--gold-soft); text-decoration: underline; text-underline-offset: 4px; }
 .footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
   margin-top: 48px;
   padding-top: 24px;
   border-top: 1px solid var(--line);
   font-size: 0.85rem;
 }
+.footer__counter {
+  display: flex;
+  min-width: 88px;
+  min-height: 15px;
+}
+.footer__counter a,
+.footer__counter img { display: block; }
 
 /* ---------- Sticky mobile CTA ---------- */
 .sticky-cta {
