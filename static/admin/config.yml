@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+backend:
+  name: github
+  repo: lavinfo/nataliq
+  branch: main
+
+locale: ru
+media_folder: static/images
+public_folder: /images
+
+collections:
+  - name: landing
+    label: Сайт
+    files:
+      - name: home
+        label: Главная страница
+        file: content/_index.md
+        format: frontmatter
+        fields:
+          - { label: SEO-заголовок, name: title, widget: string }
+          - { label: SEO-описание, name: description, widget: text }
+          - { label: Название бренда, name: brand, widget: string }
+          - { label: Ссылка на Telegram, name: telegram_url, widget: string }
+          - { label: Подпись ссылки Telegram, name: telegram_label, widget: string }
+          - { label: Надпись над заголовком, name: hero_eyebrow, widget: string }
+          - { label: Заголовок — начало, name: hero_title_start, widget: string }
+          - { label: Заголовок — золотая часть, name: hero_title_highlight, widget: string }
+          - { label: Заголовок — окончание, name: hero_title_end, widget: string }
+          - { label: Описание первого экрана, name: hero_lead, widget: text }
+          - { label: Текст главной кнопки, name: hero_cta, widget: string }
+          - { label: Примечание первого экрана, name: hero_note, widget: string }
+          - { label: Заголовок блока вопросов, name: questions_title, widget: string }
+          - { label: Описание блока вопросов, name: questions_lead, widget: text }
+          - { label: Заголовок форматов, name: formats_title, widget: string }
+          - { label: Заголовок шагов, name: how_title, widget: string }
+          - { label: Заголовок примера, name: example_title, widget: string }
+          - { label: Заголовок преимуществ, name: why_title, widget: string }
+          - { label: Заголовок о технологии, name: engine_title, widget: string }
+          - { label: Заголовок FAQ, name: faq_title, widget: string }
+          - { label: Финальный заголовок, name: final_title, widget: string }
+          - { label: Финальный текст, name: final_lead, widget: text }
+          - { label: Финальная кнопка, name: final_cta, widget: string }
+          - { label: Финальное примечание, name: final_note, widget: string }
+          - { label: Дисклеймер в подвале, name: footer_disclaimer, widget: text }
+          - { label: Контакт поддержки, name: support_contact, widget: string }
+          - { label: Сведения о владельце, name: owner_info, widget: string }
+      - name: privacy
+        label: Политика конфиденциальности
+        file: content/privacy.md
+        format: frontmatter
+        fields:
+          - { label: Заголовок, name: title, widget: string }
+          - { label: SEO-описание, name: description, widget: string }
+          - { label: Адрес страницы, name: url, widget: hidden }
+          - { label: Индексация, name: robots, widget: hidden }
+          - { label: Текст, name: body, widget: markdown }
+      - name: terms
+        label: Условия использования
+        file: content/terms.md
+        format: frontmatter
+        fields:
+          - { label: Заголовок, name: title, widget: string }
+          - { label: SEO-описание, name: description, widget: string }
+          - { label: Адрес страницы, name: url, widget: hidden }
+          - { label: Индексация, name: robots, widget: hidden }
+          - { label: Текст, name: body, widget: markdown }

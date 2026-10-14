@@ -1,0 +1,15 @@
+baseURL = "https://lavinfo.github.io/nataliq/"
+locale = "ru-RU"
+defaultContentLanguage = "ru"
+title = "NATALIQ"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term", "RSS"]
+
+[caches]
+  [caches.images]
+    dir = ":cacheDir/images"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
