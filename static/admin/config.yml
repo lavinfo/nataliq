@@ -45,8 +45,7 @@ collections:
           - { label: Финальная кнопка, name: final_cta, widget: string }
           - { label: Финальное примечание, name: final_note, widget: string }
           - { label: Дисклеймер в подвале, name: footer_disclaimer, widget: text }
-          - { label: Контакт поддержки, name: support_contact, widget: string }
-          - { label: Сведения о владельце, name: owner_info, widget: string }
+          - { label: Электронная почта, name: support_email, widget: string }
       - name: privacy
         label: Политика конфиденциальности
         file: content/privacy.md

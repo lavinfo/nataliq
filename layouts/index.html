@@ -454,8 +454,7 @@
       </nav>
       <div class="footer__col">
         <h3>Контакты</h3>
-        <p>{{ .Params.support_contact }}</p>
-        <p>{{ .Params.owner_info }}</p>
+        <a href="mailto:{{ .Params.support_email }}">{{ .Params.support_email }}</a>
       </div>
     </div>
     <div class="container footer__bottom">
