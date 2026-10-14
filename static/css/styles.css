@@ -404,6 +404,10 @@ p { text-wrap: pretty; }
   font-size: clamp(1.0625rem, 1.6vw, 1.1875rem);
   color: var(--text-muted);
 }
+.hero__lead strong {
+  color: var(--text);
+  font-weight: 750;
+}
 .hero__actions {
   display: flex;
   flex-wrap: wrap;

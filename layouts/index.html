@@ -105,7 +105,7 @@
           <p class="eyebrow eyebrow--ai"><span class="pulse" aria-hidden="true"></span>{{ .Params.hero_eyebrow }}</p>
           <h1 class="hero__title" id="hero-title">{{ .Params.hero_title_start }} <span class="gold-text">{{ .Params.hero_title_highlight }}</span> {{ .Params.hero_title_end }}</h1>
           <p class="hero__subtitle">{{ .Params.hero_subtitle }}</p>
-          <p class="hero__lead">{{ .Params.hero_lead }}</p>
+          <p class="hero__lead"><strong>{{ .Params.hero_lead_intro }}</strong> {{ .Params.hero_lead }}</p>
           <div class="hero__actions">
             <a class="btn btn--gold btn--large" href="{{ .Params.telegram_url }}" target="_blank" rel="noopener" data-cta="hero">
               <svg class="ico" aria-hidden="true"><use href="#i-send"/></svg>
