@@ -26,7 +26,9 @@ collections:
           - { label: Заголовок — начало, name: hero_title_start, widget: string }
           - { label: Заголовок — золотая часть, name: hero_title_highlight, widget: string }
           - { label: Заголовок — окончание, name: hero_title_end, widget: string }
+          - { label: Подзаголовок первого экрана, name: hero_subtitle, widget: string }
           - { label: Описание первого экрана, name: hero_lead, widget: text }
+          - { label: Приветствие бота в демонстрации, name: bot_greeting, widget: text }
           - { label: Текст главной кнопки, name: hero_cta, widget: string }
           - { label: Примечание первого экрана, name: hero_note, widget: string }
           - { label: Заголовок блока вопросов, name: questions_title, widget: string }

@@ -104,6 +104,7 @@
         <div class="hero__copy">
           <p class="eyebrow eyebrow--ai"><span class="pulse" aria-hidden="true"></span>{{ .Params.hero_eyebrow }}</p>
           <h1 class="hero__title" id="hero-title">{{ .Params.hero_title_start }} <span class="gold-text">{{ .Params.hero_title_highlight }}</span> {{ .Params.hero_title_end }}</h1>
+          <p class="hero__subtitle">{{ .Params.hero_subtitle }}</p>
           <p class="hero__lead">{{ .Params.hero_lead }}</p>
           <div class="hero__actions">
             <a class="btn btn--gold btn--large" href="{{ .Params.telegram_url }}" target="_blank" rel="noopener" data-cta="hero">
@@ -117,7 +118,7 @@
 
         <div class="hero__visual">
           <p class="demo-badge"><span class="pulse" aria-hidden="true"></span>Пример диалога</p>
-          <div class="phone" role="img" aria-label="Пример диалога с ботом NATALIQ в Telegram: приветственная картинка, вопрос о сильных сторонах в профессии и краткий ответ бота">
+          <div class="phone" role="img" aria-label="Пример диалога с ботом NATALIQ в Telegram: новое приветствие, вопрос о сильных сторонах в профессии и краткий ответ бота">
             <div class="phone__screen">
               <div class="phone__bar">
                 <img src="{{ relURL "images/logo-mark.webp" }}" width="36" height="36" alt="">
@@ -130,6 +131,7 @@
                 <div class="msg msg--bot msg--media" style="--d:.2s">
                   <img src="{{ relURL "images/head.webp" }}" width="1024" height="572" alt="" fetchpriority="high">
                 </div>
+                <div class="msg msg--bot msg--welcome" style="--d:.65s">{{ .Params.bot_greeting }}</div>
                 <div class="msg msg--user" style="--d:1.1s">Какие мои сильные стороны стоит развивать в профессии?</div>
                 <div class="chat__reply">
                   <div class="msg msg--bot msg--typing" aria-hidden="true"><i></i><i></i><i></i></div>

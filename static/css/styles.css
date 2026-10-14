@@ -387,11 +387,19 @@ p { text-wrap: pretty; }
 }
 
 .hero__title {
-  font-size: clamp(2.5rem, 6.2vw, 4.75rem);
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
   line-height: 1.04;
 }
+.hero__subtitle {
+  margin-top: 24px;
+  max-width: 610px;
+  font-family: var(--font-serif);
+  font-size: clamp(1.35rem, 2.3vw, 1.75rem);
+  line-height: 1.25;
+  color: var(--gold-soft);
+}
 .hero__lead {
-  margin-top: 26px;
+  margin-top: 18px;
   max-width: 560px;
   font-size: clamp(1.0625rem, 1.6vw, 1.1875rem);
   color: var(--text-muted);
@@ -501,6 +509,11 @@ p { text-wrap: pretty; }
   border-bottom-left-radius: 6px;
   background: rgba(255, 255, 255, 0.08);
 }
+.msg--welcome {
+  max-width: 100%;
+  font-size: 0.8rem;
+  line-height: 1.38;
+}
 .msg--user {
   align-self: flex-end;
   border-bottom-right-radius: 6px;
@@ -596,6 +609,7 @@ p { text-wrap: pretty; }
 /* Chat entrance animation (only if motion allowed) */
 @media (prefers-reduced-motion: no-preference) {
   .chat .msg--media,
+  .chat .msg--welcome,
   .chat .msg--user,
   .msg--typing,
   .msg--answer {
